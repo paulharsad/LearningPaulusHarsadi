@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Efek Slide</title>
+    <style> 
+      #induk {
+        padding: 5px;
+        background-color: #eee;
+        border: solid 1px #ccc;
+      }
+      #anak {
+        padding: 20px;
+        background-color: #fff;
+        border: solid 1px #ddd;
+        display: none;
+      }
+      }
+	   #subAnak {
+        padding: 20px;
+        background-color: green;
+        border: solid 1px #ddd;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="induk">Pilih menu</div>
+    <div id="anak">
+      <a href="#">Beranda</a>
+      <a href="#" id="subInduk">Profil</a>
+      <a href="#">Kontak</a>
+    </div>
+	<div id="subAnak">
+      <a href="#">Education</a>
+      <a href="#">Hobby</a>
+      <a href="#">Place</a>
+    </div>
+   <script type="text/javascript" src="jquery-3.2.1.js"></script>
+    <script>
+	  $("#subAnak").hide();
+      $("#induk").click(function(){
+        $("#anak").slideToggle("slow");
+		$("#subAnak").hide();
+      });
+	  $("#subInduk").click(function(){
+        $("#subAnak").slideToggle("slow");
+      });
+    </script>
+  </body>
+</html>
