@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Show dan Hide</title>
+  </head>
+
+  <body>
+    <p>Klik tombol Sembunyikan, maka teks ini akan hilang...</p>
+	
+    <button id="sembunyi">Sembunyikan</button>
+    <button id="tampil">Tampilkan</button>
+	
+    <script type="text/javascript" src="jquery-3.2.1.js"></script>
+
+    <script>
+      $("#sembunyi").click(function(){
+        $("p").hide();
+      });
+      $("#tampil").click(function(){
+        $("p").show();
+      });
+    </script>
+
+  </body>
+</html>

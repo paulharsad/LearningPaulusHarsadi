@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery CSS</title>
+    <style>
+      h3 {color: yellow; background-color: gray;}
+      p {background-color: #fff;}
+    </style>
+  </head>
+
+  <body>
+    <h3>Klik tombol untuk memilih warna latar judul ini</h3>
+    <button id="merah">Merah</button>
+    <button id="hijau">Hijau</button>
+    <button id="biru">Biru</button>
+    <hr>
+    <p>Klik tombol untuk memilih warna teks dan latar paragraf ini</p>
+    <button id="merah2">Merah Putih</button>
+    <button id="hijau2">Hijau Putih</button>
+    <button id="biru2">Biru Putih</button>
+	
+    <script type="text/javascript" src="jquery-1.8.3.js"></script>
+    <script>
+      $("#merah").click(function(){
+        $("h3").css("background-color", "red");
+      });
+      $("#hijau").click(function(){
+        $("h3").css("background-color", "green");
+      });
+      $("#biru").click(function(){
+        $("h3").css("background-color", "blue");
+      }); 
+      $("#merah2").click(function(){
+        $("p").css({"background-color": "red", "color": "white"});
+      });
+      $("#hijau2").click(function(){
+        $("p").css({"background-color": "green", "color": "white"});
+      });
+      $("#biru2").click(function(){
+        $("p").css({"background-color": "blue", "color": "white"});
+      }); 
+    </script>
+  </body>
+</html>
