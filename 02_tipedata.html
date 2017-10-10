@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<p id="nimID"></p>
+
+<script>
+var nama;
+var alamat = "solo";
+var umur = 20;
+var nim ="15.1.00002";
+var statusNikah = false;
+var mantan= new Array (5);
+
+document.write ("Alamat saya "+alamat+"<br>");
+document.getElementById("nimID").innerHTML = "NIM saya adalah "+nim;
+window.alert ("umur saya  "+umur);
+console.log(nim);
+
+nama = prompt ("nama saya "+nama);
+document.write (" Haii... nama saya "+nama+"<br>");
+
+var jawaban = confirm ("Apakah anda punya pacar ? (OK=Iya, Cancel=Tidak)");
+document.write ("Status pacar (T/F) = " +jawaban+"<br>");
+
+
+mantan[0] = "morena";
+mantan[1] = "Ariel tatum";
+mantan[2] = "Nikita M";
+mantan[3] = "Luna Maya";
+mantan[4] = "Raisa";
+
+document.write ("Mantan nomor 2 : "+mantan[1]+"<br>");
+mantan.push("Aura Kasih");
+mantan.pop();
+document.write ("Jumlah mantan : " + mantan.length+"<br>");
+
+var pacar =["TaylorSwift","SelenaGomes"];
+document.write ("Pacar nomor 2 : "+pacar[1]);
+
+</script>
+
+</body>
+</html>
