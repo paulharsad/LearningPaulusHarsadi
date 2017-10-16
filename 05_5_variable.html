@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+   <head>
+      <title>variabel Lokal dan Global</title>
+   </head>
+   <body>
+      <script>    
+         var mobil = "Toyota";
+         var bunga = "Melati";
+         
+         document.write("Mobil: " + mobil + "<br>");
+         document.write("Bunga: " + bunga + "<br>");
+         if (typeof(burung) == "undefined")
+            document.write("variabel burung tidak dikenal<br>");
+         else
+            document.write("Burung: " + burung + "<br>");
+                  
+         document.write("<hr>");
+         fx(); // Panggil fungsi fx()
+         document.write("Mobil: " + mobil + "<br>");
+         document.write("Bunga: " + bunga + "<br>");
+         if (typeof(burung) == "undefined")
+            document.write("variabel burung tidak dikenal<br>");
+         else
+            document.write("Burung: " + burung + "<br>");         
+         
+         function fx() {
+            var mobil = "Honda";
+            bunga = "Mawar";
+            
+            burung = "Garuda";
+         }
+      </script>
+   </body>
+</html>   
+
+
