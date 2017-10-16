@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+   <head>
+      <title>Nilai Balik Array</title>
+   </head>
+   <body>
+      <script>
+         var daftar = [ 10, 20, 30, 40, 50, 60, 70 ];
+         tampilkan("Sumber: ", daftar);
+
+         document.write("<br>");
+         
+         var hasil = balikUrutan(daftar);
+         
+         tampilkan("Hasil: ", hasil);
+      
+         function balikUrutan(x) {
+            var tmp = []; // Array kosong
+            
+            for (var j = 0; j < x.length; j++)
+               tmp[j] = x[x.length - j - 1];
+
+                              
+            return(tmp);      
+         }      
+         
+         function tampilkan(ket, x) {
+            document.write(ket);
+            for (var j = 0; j < x.length; j++)
+               document.write(x[j] + " ");
+         }
+      </script>
+   </body>
+</html>   
+
+
