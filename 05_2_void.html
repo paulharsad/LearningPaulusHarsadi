@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+   <head>
+      <title>Contoh Fungsi</title>
+   </head>
+   <body>
+      <script>
+         buatGaris(10);
+         document.write("Tes...tes...tes<br>");
+         buatGaris(20);
+
+         function buatGaris(n) {
+            var hasil = ""; // String kosong
+            
+            for (var j = 0; j < n; j++) 
+               hasil += "-";
+               
+            document.write(hasil + "<br>");   
+         }      
+      </script>
+   </body>
+</html>   
