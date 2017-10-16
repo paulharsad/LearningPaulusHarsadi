@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+   <head>
+      <title>Animasi Judul Dokumen</title>
+      <script src="jquery-3.2.1.js">         
+      </script>
+      <script>
+         $(document).ready(function() {
+            judul = $("title").text() + " ";
+            setTimeout("animasi()", 1000);
+         });
+         
+         function animasi() {
+            judul = judul.substr(1) + judul[0];
+            $("title").text(judul);
+            
+            setTimeout("animasi()", 1000);
+         }
+      </script>      
+      <style type="text/css">
+         #target {
+            border: solid 1px black;
+            height: 100px;
+         }         
+      </style>
+   </head>
+   <body>
+      <h1>Tes css()</h1>
+      <div id="target">Perhatikan, bingkai menebal!</div>
+      <div id="info"></div>
+   </body>
+</html> 
+
