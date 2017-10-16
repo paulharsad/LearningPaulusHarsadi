@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+   <head>
+      <title>Fungsi tanpa Argumen</title>
+   </head>
+   <body>
+      <script>
+         document.write("Hari ini: " + hariini());   
+      
+         function hariini() {
+            var namaHari = ["Minggu", "Senin", "Selasa",
+                            "Rabu", "Kamis", "Jumat",
+                            "Sabtu"];
+            
+            var sekarang = new Date();
+            return(namaHari[sekarang.getDay()]);
+         }      
+      </script>
+   </body>
+</html>   
+
+
